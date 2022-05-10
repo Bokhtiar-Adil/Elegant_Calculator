@@ -3,11 +3,12 @@ package Branch;
 public class my_branch_Branch1 {
     int roll;
     float cgpa;
+    String hall;
 
-    my_branch_Branch1(int y, float z)
-    {
-        this.roll = y;
-        this.cgpa = z;
+    public my_branch_Branch1(int roll, float cgpa, String hall) {
+        this.roll = roll;
+        this.cgpa = cgpa;
+        this.hall = hall;
     }
 
     public int getRoll() {
@@ -24,5 +25,13 @@ public class my_branch_Branch1 {
 
     public void setCgpa(float cgpa) {
         this.cgpa = cgpa;
+    }
+
+    public String getHall() {
+        return hall;
+    }
+
+    public void setHall(String hall) {
+        this.hall = hall;
     }
 }
